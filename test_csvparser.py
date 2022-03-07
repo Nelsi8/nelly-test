@@ -5,10 +5,8 @@ import csvparser
 class TestParser(unittest.TestCase):
     def test_read_row(self):
         file = Mock()
-        file.configure_mock(
-            **{'readline.return_value':'\'Vehicle1\',\'Vehicle2\''})
+        file.configure_mock(**{'readline.return_value':'\'Vehicle1\',\'Vehicle2\''})
 #expect
-
 expected = ("'Vehicle1' - 'Vehicle2'")
         
 #result
