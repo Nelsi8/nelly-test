@@ -7,8 +7,9 @@ def read_row(file):
     return None
 
 def parse_row(next_line):
-    
     line = next_line.replace(',', ' - ').replace('\n', '')
     print(line)
     
     return line
+    
+
